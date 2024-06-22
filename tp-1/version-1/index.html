@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script_view.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Control de acceso</title>
+    <style>
+
+    </style>
+    <script src="script_view.js" defer></script>
+</head>
+<body>
+    <h1>Sistema de control de accesos</h1>
+    <section>
+        <button onclick="redirectTo('user/user.html')">Usuarios</button>
+        <button onclick="redirectTo('group/group.html')">Grupos</button>
+        <button onclick="redirectTo('action/action.html')">Acciones</button>
+    </section>
+
+    <button onclick="readAll()">Ver tabla</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Id usuario</th>
+                <th>Usuario</th>
+                <th>Grupo</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody">
+        </tbody>
+    </table>
+
+
+</body>
+</html>

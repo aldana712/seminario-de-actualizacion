@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script_group.js" defer></script>
+</head>
+<body>
+    <section>
+        <h1>Grupos de Usuarios</h1>
+        <button onclick="createGroup()">Crear grupo</button>
+        <button onclick="readGroup()">Listar grupos</button>
+        <button onclick="updateGroup()">Editar grupo</button>
+        <button onclick="deleteGroup()">Eliminar grupo</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Grupo</th>
+                </tr>
+            </thead>
+            <tbody id="user_groupTableBody">
+                
+            </tbody> 
+        </table>
+    </section>
+    <section>
+        <h1>Lista de Usuarios</h1>
+        <button onclick="readUser()">Ver usuarios</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="userTableBody">
+                
+            </tbody> 
+        </table>
+    </section>
+    <section>
+        <button onclick="linkUsersGroups()">Vinculación de Usuarios con Grupos</button>
+    </section>
+    <button id="volver-inicio">Volver al inicio</button>
+    <script>
+        document.getElementById("volver-inicio").addEventListener("click", function() {
+            window.location.href = "../index.html";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script_action.js" defer></script>
+    <script src="../group/script_group.js"></script>
+</head>
+<body>
+    <h1>Acciones</h1>
+    <button onclick="createAction()">Crear acción</button>
+    <button onclick="readAction()">Listar acciones</button>
+    <button onclick="updateAction()">Editar acción</button>
+    <button onclick="deleteAction()">Eliminar acción</button>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody id="actionTableBody">
+
+        </tbody>
+    </table>
+    <section>
+        <h2>Vincular acciones y grupos</h2>
+        <button onclick="readGroup()">Ver grupos</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Grupo</th>
+                </tr>
+            </thead>
+            <tbody id="user_groupTableBody">
+    
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <button onclick="linkGroupAction()">Vincular grupos con acciones</button>
+    </section>
+    <button id="volver-inicio">Volver al inicio</button>
+    <script>
+        document.getElementById("volver-inicio").addEventListener("click", function() {
+            window.location.href = "../index.html";
+        });
+    </script>
+</body>
+</html>
