@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    padding: 36px;
+    background-color: #f4f4f9; /* Fondo claro para más contraste */
+}
+
+#chat {
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Bordes más suaves */
+    overflow: hidden;
+    width: 400px; /* Ajuste para mayor espacio */
+    height: 500px; /* Ajuste la altura del contenedor del chat */
+    display: none; /* Ocultar inicialmente hasta el inicio de sesión */
+    flex-direction: column;
+    background-color: #fff; /* Fondo blanco para mayor claridad */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    background-color: #f9f9f9; /* Fondo más claro para el área de mensajes */
+}
+
+#messages > li {
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    background-color: #eaeaea;
+    border-radius: 6px; 
+    word-wrap: break-word; 
+}
+
+#messages > li:nth-child(odd) {
+    background-color: #f0f0f0; 
+}
+
+#form {
+    display: flex;
+    padding: 8px 10px;
+    border-top: 1px solid #ddd;
+    background-color: #fafafa; 
+}
+
+#input {
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    padding: 10px 16px;
+    flex: 1;
+    margin-right: 10px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+#input:focus {
+    outline: none;
+    border-color: #09f; 
+}
+
+#form > button {
+    background: #09f;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#form > button:hover {
+    background-color: #0cf; 
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+#username {
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    padding: 10px 16px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+#username:focus {
+    outline: none;
+    border-color: #09f;
+}
+
+button {
+    background: #09f;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0cf;
+}
